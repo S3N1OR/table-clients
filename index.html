@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица клиентов</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Таблица клиентов</h1>
+        <table id="sales-table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Имя клиента</th>
+                    <th>Количество шт.</th>
+                    <th>Цена за шт.</th>
+                    <th>Итог</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="row-number">1</td>
+                    <td><input type="text" class="client-name"></td>
+                    <td><input type="number" class="quantity" min="0" value="0"></td>
+                    <td><input type="number" class="price" min="0" value="130"></td>
+                    <td class="total">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="totals">
+            <p>Общее количество штук: <span id="total-quantity">0</span></p>
+            <p>Общая сумма: <span id="total-sum">0.00</span></p>
+        </div>        
+        <div class="controls">
+            <button id="add-row">+</button>
+            <button id="remove-row">-</button>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
